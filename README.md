@@ -40,7 +40,7 @@ private:
         COORD topLeft = { 0, 0 };
         DWORD written;
         FillConsoleOutputCharacter(hConsole, ' ', width * height, topLeft, &written);
-        FillConsoleOutputAttribute(hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY, width * height, topLeft, &written);
+        FillConsoleOutputAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY, width * height, topLeft, &written);
         SetConsoleCursorPosition(hConsole, topLeft);
     }
 
